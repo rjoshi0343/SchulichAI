@@ -1,0 +1,348 @@
+-- EMPLOYEES DATA
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (1, 'Bethany', 'Sweet', 'Ap #449-8188 Eu,  Av.', 'Kent', 'BC', 'V2R9K6', '9662642927', 'bethany.sweet@healthclinic.com', 'Doctor', '1982-12-30', 'm', 'M');
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (2, 'Cooper', 'York', 'P.O. Box 584,  8401 Nunc Av.', 'Port Coquitlam', 'BC', 'V4V3J1', '9812230641', 'copper.york@healthclinic.com', 'Doctor', '1978-07-05', 'm', 'M');
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (3, 'Noble', 'Gamble', 'Ap #813-8851 Condimentum Rd.', 'Lloydminster', 'SK', 'S2A5E4', '4058243807', 'noble.gamble@healthclinic.com', 'Nurse', '1980-08-18', 'm', 'M');
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (4, 'Leah', 'Nash', '1266 Pede,  St.', 'Chambord', 'QC', 'J3C9C6', '4284043018', 'leah.nash@healthclinic.com', 'Nurse', '1974-05-14', 'f', 'M');
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (5, 'Lucian', 'Zimmerman', 'P.O. Box 400,  4943 Nunc Rd.', 'Sparwood', 'BC', 'V6R4J0', '7199868554', 'lucian.zimmerman@healthclinic.com', 'Doctor', '1980-10-12', 'm', 'M');
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (6, 'Oprah', 'Small', '298-5670 Nec,  Road', 'Tay', 'ON', 'M1B3V4', '5641564541', 'oprah.small@healthclinic.com', 'Receptionist', '1983-07-20', 'm', 'N');
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (7, 'Gillian', 'Puckett', 'Ap #837-9979 Mi St.', 'North Bay', 'ON', 'L5E8B4', '5188886880', 'Gillian.Puckett@healthclinic.com', 'IT Specialist', '1978-05-10', 'm', 'N');
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (8, 'Oleg', 'Stephenson', '546-1930 Adipiscing Av.', 'Grey County', 'ON', 'P9L6T0', '2172341366', 'Oleg.Stephenson@healthclinic.com', 'Cleaning Staff', '1978-04-29', 'm', 'N');
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (9, 'Cain', 'Noel', 'Ap #417-6684 Molestie Ave', 'Ottawa', 'ON', 'N8J5Z7', '2595807164', 'cain.noel@healthclinic.com', 'Inventory Manager', '1975-09-13', 'f', 'N');
+
+INSERT INTO EMPLOYEES (EmployeeID, Employee_FirstName, Employee_LastName, Employee_Address, Employee_City, Employee_Province, Employee_PostalCode, Employee_Phone, Employee_Email, Current_Position_Title, Employee_DOB, Employee_Gender, EmployeeType) VALUES (10, 'Kieran', 'Jimenez', '263-3718 Molestie St.', 'Bruderheim', 'AB', 'T0E9G5', '8963796526', 'Kieran.Jimenez@healthclinic.com', 'Junior Doctor', '1976-02-17', 'f', 'M');
+
+
+-- JOB_HISTORY DATA
+-- Current Position Data
+INSERT INTO JOB_HISTORY (HistoryID, EmployeeID, Job_Title, JobStartDate) VALUES 
+(1, 1, 'Doctor', '2010-05-17'),
+(2, 2, 'Doctor', '2010-05-17'),
+(3, 3, 'Nurse', '2010-05-17'),
+(4, 4, 'Nurse', '2010-05-17'),
+(5, 5, 'Doctor', '2010-05-17'),
+(6, 6, 'Receptionist', '2010-05-17'),
+(7, 7, 'IT Specialist', '2010-05-17'),
+(8, 8, 'Cleaning Staff', '2010-05-17'),
+(9, 9, 'Inventory Manager', '2010-05-17'),
+(10, 10, 'Junior Doctor', '2010-05-17')
+;
+
+-- Historic Promotion Data
+INSERT INTO JOB_HISTORY (HistoryID, EmployeeID, Job_Title, JobStartDate, JobEndDate) VALUES 
+(11, 1, 'Junior Doctor', '2008-05-17','2010-05-16'),
+(12, 2, 'Assistant Doctor', '2009-04-01','2010-05-16'),
+(13, 6, 'Support Resource', '2003-08-01','2010-05-16'),
+(14, 7, 'IT Generalist', '2007-09-04','2010-05-16'),
+(15, 9, 'Inventory Analyst', '2003-08-25','2010-05-16')
+;
+
+-- CREDENTIALS Data
+INSERT INTO CREDENTIALS (CredentialID, EmployeeID, Credential_Description) VALUES 
+(1, 1, 'LMCC'),
+(2, 2, 'LMCC'),
+(3, 3, 'Practical Nurse'),
+(4, 4, 'Practical Nurse'),
+(5, 5, 'LMCC'),
+(6, 10, 'MB, BS'),
+(7, 1, 'DO'),
+(8, 2, 'CFPC')
+;
+
+-- SKILLS Data
+INSERT INTO SKILLS (SkillID, EmployeeID, Skill_Description) VALUES 
+(1, 1, 'English'),
+(2, 2, 'Spanish'),
+(3, 3, 'German'),
+(4, 4, 'Urdu'),
+(5, 5, 'Punjabi'),
+(6, 6, 'English'),
+(7, 7, 'C++'),
+(8, 8, 'French'),
+(9, 9, 'Korean'),
+(10, 1, 'Patient Management'),
+(11, 2, 'Service Management'),
+(12, 3, 'Patient Care'),
+(13, 4, 'Doctor Support'),
+(14, 5, 'XRAY Techniques')
+;
+
+-- NONMEDICAL DATA
+
+INSERT INTO NONMEDICAL (NMEmployeeID, Department) VALUES 
+(6, 'Customer Service'),
+(7, 'Technology'),
+(8, 'Operations'),
+(9, 'Inventory')
+;
+
+-- MEDICAL DATA
+
+INSERT INTO MEDICAL (MEmployeeID, Speciality) VALUES 
+(1, 'DERMATOLOGIST'),
+(2, 'FAMILY MEDICINE'),
+(3, ''),
+(4, ''),
+(5, 'NEUROLOGIST'),
+(10, '')
+;
+
+-- ALMA_MATER DATA
+
+INSERT INTO ALMA_MATER (AlmaMaterID, MEmployeeID, AlmaMater_Name) VALUES 
+(1, 1, 'McGill University'),
+(2, 2, 'Toronto University'),
+(3, 3, 'York University'),
+(4, 4, 'McGill University'),
+(5, 5, 'York University'),
+(6, 10, 'Waterloo')
+;
+
+-- INSURANCE DATA
+
+INSERT INTO INSURANCE (InsurerID, Insurer_Name, Insurer_Phone, Insurer_Email) VALUES
+(1, 'Vitae Insurance', '2231737683', 'nec.tempus.mauris@metusAliquamerat.ca'), 
+(2, 'Sit Insurance', '7471051414', 'magna.Duis@dis.com', '16370404'), 
+(3, 'Orci Insurance', '9797681304', 'urna.convallis.erat@placeratCras.co.uk'), 
+(4, 'Dictum Insurance PC', '6643358362', 'ac.libero.nec@dictummagnaUt.ca'), 
+(5, 'Elit Insurance', '5989677514', 'dui.nec@eratvel.com', '16420120'), 
+(6, 'Insurance Ltd', '2549546938', 'Praesent@euismodacfermentum.ca'), 
+(7, 'Iaculis Insurance', '1202418953', 'libero@urnasuscipit.org'), 
+(8, 'Insurance Brother', '7831692311', 'quam@libero.ca'), 
+(9, 'Insurance Company', '3331486477', 'Vivamus.euismod@Nullaaliquet.com')
+;
+
+-- Inventory DATA
+INSERT INTO Inventory (InventoryID, Inventory_Max_Level, InventoryType) VALUES 
+(1, 100, 'C'),
+(2, 100, 'C'),
+(3, 100, 'C'),
+(4, 100, 'M'),
+(5, 100, 'M'),
+(6, 100, 'M')
+;
+
+-- CONSUMABLES DATA
+INSERT INTO CONSUMABLES (CInventoryID, Consumable_Name) VALUES 
+(1, 'Gloves'),
+(2, 'Masks'),
+(3, 'Swabs');
+
+
+-- MEDICATIONS DATA
+INSERT INTO MEDICATIONS (MinventoryID, Medication_Name) VALUES 
+(4, 'Tylanol'),
+(5, 'Bylanol'),
+(6, 'Cylanol')
+;
+
+
+-- VENDOR DATA
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (1,'Molestie Tor','P.O. Box 961, 2017 Pretium Ave','Lang','SK','S1H1B8','8071515907','Integer@blandla.edu','Oscar','Stephens');
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (2,'Rutrum Institute','P.O. Box 884, 5439 Et Ave','Beaconsfield','QC','H3H8G0','3693435942','naur.mus@CPhalus.edu','Jermaine','Delacruz');
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (3,'Amet Corp.','P.O. Box 532, 6070 Fat Ave','Markham','ON','N7W2W7','7422167677','ad.Etiam@luctus.eu','Garrison','Patel');
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (4,'At Nisi Cum Industries','7844 Pede Av.','Wilmont','ON','P1C0P8','3546663105','Sed@Pellenttant.ca','Austin','Eaton');
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (5,'Sapien Industries','5599 Orci, Avenue','Fredericton','NB','E7L6J3','9213184664','rutrum.justo@fis.edu','Cameron','Mcdowell');
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (6,'Aliquam Corporation','P.O. Box 767, 3582 Mauris St.','Moose Jaw','SK','S3P8Z8','6547712696','ipsum.Phlus@maurisrid.com','Tyrone','Beasley');
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (7,'Tortor Corporation','146-7704 Lectus Rd.','Aurora','ON','M0A2J5','2576577938','Nunc@adipisnean.uk','Karen','Hopper');
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (8,'Porttitor Associates','322-6138 Nec Rd.','Orangeville','ON','N6P2E6','5697289622','ligula.contuer@arcuVnte.edu','Odette','Washington');
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (9,'Nam Ac LLP','Ap #531-6993 Vulputate, Ave','Bathurst','NB','E1P0J2','7566269929','euismod.et@erat.com','Lawrence','Thomas');
+
+INSERT INTO "vendor" (vendorid,vendor_name,vendor_address,vendor_city,vendor_province,vendor_postalcode,vendor_phone,vendor_email,contactfirstname,contactlastname) VALUES (10,'Amet Company','P.O. Box 852, 6617 Netus Av.','Burnaby','BC','V9R3L6','1157027335','Nulla@velitAliquam.com','Scarlet','Schultz');
+
+
+-- PATIENTS DATA
+
+INSERT INTO PATIENTS (patientid, patient_firstname, patient_lastname, patient_address, patient_city, patient_province, patient_postalcode, patient_phone, patient_email, patient_dob, patient_gender, ohip, nextofkin_firstname, nextofkin_lastname, nextofkin_phone, family_doctor_firstname, family_doctor_lastname, family_doctor_phone)VALUES ('1', 'Kathleen','Alvarez', '16524 Crass Rd','Orangeville', 'ON','N9V2X3','9888774049','ferg.ari@gestas.com','1937-12-12','M','8990140669','Brianna','McKay','7303004123','chloe','williams','2265800343');
+
+INSERT INTO PATIENTS (patientid, patient_firstname, patient_lastname, patient_address, patient_city, patient_province, patient_postalcode, patient_phone, patient_email, patient_dob, patient_gender, ohip, nextofkin_firstname, nextofkin_lastname, nextofkin_phone, family_doctor_firstname, family_doctor_lastname, family_doctor_phone)VALUES ('2', 'Eileenn','Cruz', '12 Milliken Rd','Toronto', 'ON','M9V3N3','9456774019','arfgeferg.ari@gestas.com','1967-11-11','M','8290140119','Monica','Alay','7325663133','Mary','Gillins','1236599863');
+
+INSERT INTO PATIENTS (patientid, patient_firstname, patient_lastname, patient_address, patient_city, patient_province, patient_postalcode, patient_phone, patient_email, patient_dob, patient_gender, ohip, nextofkin_firstname, nextofkin_lastname, nextofkin_phone, family_doctor_firstname, family_doctor_lastname, family_doctor_phone)VALUES ('3', 'Yuwei','Chan', '12 Markham Rd','Markham', 'ON','L3V3N3','9236774014','Chengrg.ari@yahoo.com','1987-01-22','F','8253640119','Peter','Chan','26587837656','Cooper','York','9812230641');
+
+INSERT INTO PATIENTS (patientid, patient_firstname, patient_lastname, patient_address, patient_city, patient_province, patient_postalcode, patient_phone, patient_email, patient_dob, patient_gender, ohip, nextofkin_firstname, nextofkin_lastname, nextofkin_phone, family_doctor_firstname, family_doctor_lastname, family_doctor_phone)VALUES ('4', 'Mohammed','Haseeb', '12 Chillar Ln','North York', 'ON','M2P3T5','6145654781','hasseeb@yahoo.com','1986-12-11','M','7867645678','Rakesh','Haseeb','9098767865','Cooper','York','9812230641');
+
+INSERT INTO PATIENTS (patientid, patient_firstname, patient_lastname, patient_address, patient_city, patient_province, patient_postalcode, patient_phone, patient_email, patient_dob, patient_gender, ohip, nextofkin_firstname, nextofkin_lastname, nextofkin_phone, family_doctor_firstname, family_doctor_lastname, family_doctor_phone)VALUES ('5', 'Damil','Prakash', '77 Missisauga Rd','Brampton', 'ON','N2P5T5','6189765781','damilprakash@yahoo.com','1990-06-12','M','7869876778','Anuvrat','Singh','9675467098','Cooper','York','9812230641');
+
+INSERT INTO PATIENTS (patientid, patient_firstname, patient_lastname, patient_address, patient_city, patient_province, patient_postalcode, patient_phone, patient_email, patient_dob, patient_gender, ohip, nextofkin_firstname, nextofkin_lastname, nextofkin_phone, family_doctor_firstname, family_doctor_lastname, family_doctor_phone)VALUES ('6', 'Rakesh','Joshi', '123 Forest Rd','Barrie', 'ON','B5G3G3','2265438901','joshirakeshh@yahoo.com','1978-11-26','M','7865654898','Puja','Joshi','6373568762','Cooper','York','9812230641');
+
+INSERT INTO PATIENTS (patientid, patient_firstname, patient_lastname, patient_address, patient_city, patient_province, patient_postalcode, patient_phone, patient_email, patient_dob, patient_gender, ohip, nextofkin_firstname, nextofkin_lastname, nextofkin_phone, family_doctor_firstname, family_doctor_lastname, family_doctor_phone)VALUES ('7', 'Altay','Aksulu', '123 York Rd','Toronto', 'ON','M3G2G3','6145609091','altayaksulu@yahoo.com','1970-12-26','M','7864567698','Ariana','Aksulu','6378364742','Cooper','York','9812230641');
+
+INSERT INTO PATIENTS (patientid, patient_firstname, patient_lastname, patient_address, patient_city, patient_province, patient_postalcode, patient_phone, patient_email, patient_dob, patient_gender, ohip, nextofkin_firstname, nextofkin_lastname, nextofkin_phone, family_doctor_firstname, family_doctor_lastname, family_doctor_phone)VALUES ('8', 'Murat','Kristal', '456 York Rd','Barrie', 'ON','M5G2J4','6148777891','muratkristal@yahoo.com','1950-09-11','F','7854655578','Allay','Kristal','6227836732','Bethany','Sweet','9662642927');
+
+INSERT INTO PATIENTS (patientid, patient_firstname, patient_lastname, patient_address, patient_city, patient_province, patient_postalcode, patient_phone, patient_email, patient_dob, patient_gender, ohip, nextofkin_firstname, nextofkin_lastname, nextofkin_phone, family_doctor_firstname, family_doctor_lastname, family_doctor_phone)VALUES ('9', 'Patient','James', '45 Yrk Rd','Brie', 'ON','M5G2J4','6148777891','patient@yahoo.com','1950-09-11','M','7854655578','Allay','Kristal','6227836732','Bethany','Sweet','9662642927');
+
+-- PURCHASE_ORDER DATA
+
+INSERT INTO PURCHASE_ORDER (OrderID, VendorID, InventoryID, Vendor_Name, OrderDate, OrderQuantity, Product_Name, Contact_FirstName, Contact_LastName) VALUES
+(1, 1, 1, 'Molestie Tor', '2019-12-01', 20, 'Gloves' , 'Cain', 'Noil'),
+(2, 1, 2, 'Molestie Tor', '2019-12-02', 25, 'Masks', 'Cain', 'Noil'),
+(3, 6, 6, 'Aliquam Corporation', '2019-12-02', 75,'Cylanol', 'Cain', 'Noil'),
+(4, 6, 5, 'Aliquam Corporation', '2019-12-05', 15, 'Bylanol' , 'Cain', 'Noil'),
+(5, 5, 4, 'Sapien Industries', '2019-12-05', 35, 'Tylanol', 'Cain', 'Noil'),
+(6, 5, 4, 'Sapien Industries', '2019-12-06', 35, 'Tylanol','Cain', 'Noil'),
+(7, 5, 4, 'Sapien Industries', '2019-12-07', 35, 'Tylanol', 'Cain', 'Noil'),
+(8, 6, 5, 'Aliquam Corporation', '2019-12-06', 15, 'Bylanol', 'Cain', 'Noil'),
+(9, 6, 6, 'Aliquam Corporation', '2019-12-08', 15, 'Cylanol', 'Cain', 'Noil'),
+(10, 1, 2, 'Molestie Tor', '2019-12-06', 25, 'Masks','Cain', 'Noil'),
+(11, 1, 2, 'Molestie Tor', '2019-12-08', 25, 'Masks','Cain', 'Noil')
+;
+
+
+-- ALLERGIES DATA
+
+INSERT INTO ALLERGIES (Allergy_ID, PatientID, Allergy) VALUES
+(1, 1, 'Allergic to Walnuts'),
+(2, 1, 'Benadryl causes dystonic reaction'),
+(3, 5, 'Sulfa drugs - rash'),
+(4, 7, 'Allergic to Peanuts'),
+(5, 9, 'Lactose Intolerance')
+;
+
+-- MEDICAL_DETAILS DATA
+
+INSERT INTO MEDICAL_DETAILS (Medical_ID, PatientID, Medical_Details) VALUES
+(1, 1, 'Cardiac stent in 1999'),
+(2, 1, 'hystarectomy in 1970s'),
+(3, 5, 'CAD w/ Left heart cath in 2005 showing 40% LAD, 50% small D2, 40% RCA and 30% large OM; 2006 TTE showing LVEF 60-65% with diastolic dysfunction, LVH, mild LA dilation'),
+(4, 7, 'Asthma/COPD '),
+(5, 9, 'transfer of file - patient has swelling of tongue and difficulty breathing and swallowing, was treated between 2012 and 2017, reffered to specialists twice')
+;
+
+
+-- APPOINTMENTS DATA
+
+INSERT INTO APPOINTMENTS (AppointmentID, MEmployeeID, PatientID, Scheduled_Date, Scheduled_Time, Scheduled_Duration, Actual_Date, Actual_Start_Time, Actual_End_Time) VALUES
+(1, 1, 1, '2019-10-02', '09:00:00', 30, '2019-10-02', '09:00:00','09:30:00'),
+(2, 1, 1, '2019-10-03', '09:00:00', 15, '2019-10-03', '09:00:00','09:25:00'),
+(3, 1, 1, '2019-10-04', '09:00:00', 30, '2019-10-04', '09:00:00','09:35:00'),
+(4, 1, 1, '2019-10-05', '09:00:00', 45, '2019-10-05', '09:00:00','09:36:00'),
+(5, 1, 1, '2019-10-06', '09:00:00', 30, '2019-10-06', '09:00:00','09:39:00'),
+(6, 2, 2, '2019-10-01', '09:00:00', 45, '2019-10-01', '09:00:00','09:50:00'),
+(7, 2, 2, '2019-10-06', '02:00:00', 30, '2019-10-06', '02:00:00','02:50:00'),
+(8, 3, 5, '2019-12-01', '03:00:00', 15, '2019-12-01', '03:00:00','03:50:00'),
+(9, 4, 7, '2019-12-03', '04:00:00', 25, '2019-12-03', '04:00:00','04:50:00')
+;
+
+INSERT INTO APPOINTMENTS (AppointmentID, MEmployeeID, PatientID, Scheduled_Date, Scheduled_Time, Scheduled_Duration) VALUES
+(10, 5, 9, '2019-9-02', '03:00:00', 60),
+(11, 10, 8, '2019-11-03', '05:00:00', 30),
+(12, 10, 4, '2019-11-04', '07:00:00', 20)
+;
+
+-- COMPLAINTS DATA
+
+INSERT INTO COMPLAINTS (ComplaintID, PatientID, Complaint_Start_Date, Complaint_End_Date) VALUES
+(1, 1, '2019-10-02','2019-10-06'),
+(2, 2, '2019-10-01', '2019-10-06'),
+(3, 5, '2019-12-01', '2019-12-03')
+;
+
+INSERT INTO COMPLAINTS (ComplaintID, PatientID, Complaint_Start_Date) VALUES
+(4, 7, '2019-12-03')
+;
+
+
+-- COMPLAINTS_APPOINTMENT_TRACKER DATA
+
+INSERT INTO COMPLAINTS_APPOINTMENT_TRACKER (CAID, ComplaintID, AppointmentID) VALUES
+(1, 1 , 1),
+(2, 1 , 2),
+(3, 1 , 3),
+(4, 1 , 4),
+(5, 1 , 5),
+(6, 2 , 6),
+(7, 2 , 7),
+(8, 3 , 8),
+(9, 4 , 9)
+;
+
+-- Treatment_Details DATA
+
+INSERT INTO Treatment_Details (TreatmentID, ComplaintID, Treatment_Details) VALUES
+(1, 1 , 'Patient just moved to this area and requests amitriptyline and chlorpromazine. The risks of combining these medications were explained to him, but he insisted, so will order.'),
+(2, 1 , 'Patient reports that he feels better. He thinks the antidepressant is working'),
+(3, 2 , 'Last Tylanol treatment showed no progress, so we tried Bylanol XYZ. Asked Patient for 2, 50 mg doses every day. Follow up requested in 30 days.'),
+(4, 3 , 'XRay Requested')
+;
+
+-- Diagnosis_Details DATA
+
+INSERT INTO Diagnosis_Details (DiagnosisID, ComplaintID, Diagnosis_Details) VALUES
+(1, 1 , 'Patient unhappy childhood and psychiatric history of depression support diagnosis of ABC problem. In addition, she meets at least five of the DMS-IV criteria on mental state examination'),
+(2, 2 , 'Tumour in Patients right frontal fossa might affect functions of the frontal lobe'),
+(3, 3 , 'sudden confinement in hospital, diminished ability to perform daily activities, and concerns about her family and health, predispose her to experiencing anxiety, a potential trigger of depression'),
+(4, 4 , 'Common Cold')
+;
+
+-- Doctor_Notes DATA
+
+INSERT INTO Doctor_Notes (DoctorNotesID, ComplaintID, Doctor_Notes) VALUES
+(1, 1 , 'Patient unhappy, possibility of depression, try common medication. In case of no result, refer to specialist'),
+(2, 2 , 'Tumour can be due to cancer, further tests to confirm'),
+(3, 3 , 'Suggest exercise, if patient doesnt respond, try antidepressants'),
+(4, 4 , 'Try Tylanol first, and suggested flu shots for future')
+;
+
+-- Complaint_Description DATA
+
+INSERT INTO Complaint_Description (ComplaintDescID, ComplaintID, Complaint_Description) VALUES
+(1, 1 , 'Patient unhappy, disconnected from lift, no friends'),
+(2, 2 , 'Pain started three weeks ago, family history of cancer'),
+(3, 3 , 'Was hospitalized for three months, has felt depressed since, asked for medication'),
+(4, 4 , 'Caughing and sneezing for five days now, caught it from patients child')
+;
+
+
+INSERT INTO CLAIMS(claimid,patientid,insurerid,complaintid,procedure_name,insurance_code,submission_date,amount_submitted,amount_covered)VALUES ('1','1','1','4','Vasectomy','234565','2019-11-02','2300.90','2300.90');
+
+INSERT INTO CLAIMS(claimid,patientid,insurerid,complaintid,procedure_name,insurance_code,submission_date,amount_submitted,amount_covered)VALUES ('2','1','1','3','heart bypass','232345','2019-10-02','1300.90','1300.90');
+
+INSERT INTO CLAIMS(claimid,patientid,insurerid,complaintid,procedure_name,insurance_code,submission_date,amount_submitted,amount_covered)VALUES ('3','2','2','2','lung surgery','123345','2019-11-22','8300.90','7700.90');
+
+INSERT INTO CLAIMS(claimid,patientid,insurerid,complaintid,procedure_name,insurance_code,submission_date,amount_submitted,amount_covered)VALUES ('4','3','3','1','eye surgery','123545','2019-11-12','4300.90','5700.90');
+
+
+
+
+-- INVENTORY_USAGE_TRACKER DATA
+
+INSERT INTO INVENTORY_USAGE_TRACKER (InvUseID, InventoryID, ComplaintID, Date_Consumed, Quantity_Consumed) VALUES
+(1, 1, 1 , '2019-12-01', 5),
+(2, 2, 2 , '2018-12-01', 15),
+(3, 3, 2 , '2019-11-01', 12),
+(4, 4, 3 , '2019-12-04', 3),
+(5, 4, 3 , '2019-12-05', 4),
+(6, 2, 3 , '2019-12-05', 3),
+(7, 1, 3 , '2019-12-06', 3),
+(8, 6, 4 , '2019-12-05', 15),
+(9, 3, 4 , '2019-12-06', 26)
+;
+
+
+-- DATA Product 
+
+INSERT INTO Product (ProductID, VendorID, Product_Name, ProductType) VALUES
+	(1, 1, 'Gloves', 'C'),
+	(2, 1, 'Masks', 'C'),
+	(3, 5, 'Tylanol', 'M'),
+	(4, 6, 'Bylanol', 'M'),
+	(5, 6, 'Cylanol', 'M'),
+	(6, 3, 'Swabs', 'C')
+;
